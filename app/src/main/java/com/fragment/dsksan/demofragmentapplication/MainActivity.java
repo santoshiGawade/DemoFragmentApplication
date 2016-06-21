@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(getApplication(),"In On create method", Toast.LENGTH_LONG).show();
-
+        System.out.println("In Main Activity");
     }
     public void buttonWelcomeClicked(View view)
     {
