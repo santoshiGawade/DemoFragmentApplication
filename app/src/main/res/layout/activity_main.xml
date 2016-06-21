@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context="com.fragment.dsksan.myfragmentapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonWelcome"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:onClick="buttonWelcomeClicked"
+            android:text="Welcome to Fragments" />
+
+        <!-- <TextView
+             android:id="@+id/footer_view"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:background="#ffffff"
+             android:textSize="25dp"
+             android:layout_weight="1"
+             android:text="Welcome to Fragments" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+       >
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.fragment.dsksan.myfragmentapplication.Fragment1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.fragment.dsksan.myfragmentapplication.Fragment2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>
