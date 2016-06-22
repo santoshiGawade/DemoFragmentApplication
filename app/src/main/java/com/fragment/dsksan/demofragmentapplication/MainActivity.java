@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplication(),"In On create method", Toast.LENGTH_LONG).show();
         System.out.println("In Main Activity");
         System.out.println("In Main Activity121212121");
+         System.out.println("In Main Activity343434343434");
     }
     public void buttonWelcomeClicked(View view)
     {
